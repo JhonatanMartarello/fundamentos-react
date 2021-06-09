@@ -1,32 +1,35 @@
 import React from 'react'
 
 import './App.css'
-import Primeiro from './components/Primeiro';
-// import FuncaoAnonima from './components/FuncaoAnonima';
-import ArrowFunction from './components/ArrowFunction';
-import ComParametro from './components/ComParametro';
-import ComFilhos from './components/ComFilhos';
+import Primeiro from './components/basicos/Primeiro';
+import ComParametro from './components/basicos/ComParametro';
+import ComFilhos from './components/basicos/ComFilhos';
 import Card from './components/layout/Card';
-import Repeticao from './components/Repeticao';
-import Condicional from './components/Condicional';
-import CondicionalComIf from './components/CondicionalComIf';
+import Repeticao from './components/basicos/Repeticao';
+import Condicional from './components/basicos/Condicional';
+import CondicionalComIf from './components/basicos/CondicionalComIf';
+import Pai from './components/comunicacao/direta/Pai';
 
 
-export default props => (
+const app = () => (
     <div className="App">
-        <Card titulo="#7 - Condicional Com IF">
+        
+        <Card titulo="#8 - Comunicação Direta" color="#FA6900">
+            <Pai></Pai>
+        </Card>
+        <Card titulo="#7 - Condicional Com IF" color="#FA6900">
             <CondicionalComIf numero={14}></CondicionalComIf>
         </Card>
-        <Card titulo="#6 - Condicional">
+        <Card titulo="#6 - Condicional" color="#00C8F8">
             <Condicional numero={11}></Condicional>
         </Card>
-        <Card titulo="#5 - Condicional">
+        <Card titulo="#5 - Condicional" color="#E94C6F">
             <Condicional numero={10}></Condicional>
         </Card>
-        <Card titulo="#4 - Repetição">
+        <Card titulo="#4 - Repetição" color="#DE4D4E">
             <Repeticao></Repeticao>
         </Card>
-        <Card titulo="#3 - Com Filhos">
+        <Card titulo="#3 - Com Filhos" color="#FFC33C">
             <ComFilhos>
                 <ul>
                     <li>Ana</li>
@@ -37,11 +40,13 @@ export default props => (
                 </ul>
             </ComFilhos>
         </Card>    
-        <Card titulo="#2 - Com Parâmetros">
+        <Card titulo="#2 - Com Parâmetros" color="#DE593A">
             <ComParametro titulo="Esse é o título" subtitulo="Esse é o subtítulo" />
         </Card>
-        <Card titulo="#1 - Primeiro Componente">
+        <Card titulo="#1 - Primeiro Componente" color="#FF85CB">
             <Primeiro />
         </Card>
     </div>
 );
+
+export default app;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props =>
+const comFilhos = props =>
     <div>
         <h2>Os Filhos:</h2>
         <div>
@@ -8,3 +8,5 @@ export default props =>
         </div>
 
     </div>
+
+export default comFilhos;

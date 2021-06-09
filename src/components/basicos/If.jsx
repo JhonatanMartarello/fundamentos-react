@@ -1,8 +1,10 @@
 
-export default function (props) {
+const If = function (props) {
     if(props.test){
         return props.children
     } else {
         return false;
     }
 }
+
+export default If;
