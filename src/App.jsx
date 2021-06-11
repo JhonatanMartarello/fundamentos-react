@@ -10,11 +10,14 @@ import Condicional from './components/basicos/Condicional';
 import CondicionalComIf from './components/basicos/CondicionalComIf';
 import Pai from './components/comunicacao/direta/Pai';
 import Super from './components/comunicacao/indireta/Super';
-
+import Input from './components/formulario/Input';
 
 const app = () => (
     <div className="App">
         
+        <Card titulo="#10 - Formulario Input" color="#CCCCCC">
+            <Input></Input>
+        </Card>
         <Card titulo="#9 - Comunicação Indireta" color="#000">
             <Super></Super>
         </Card>
