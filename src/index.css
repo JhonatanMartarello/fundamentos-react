@@ -5,6 +5,11 @@ body{
     color: #FFF;
     text-align: center;
     font-size: 2rem;
+
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
 }
 
 h1, h2{

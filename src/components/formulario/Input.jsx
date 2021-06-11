@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const ComParametro = props => {
+const Funcao = props => {
     const [nome, setNome] = useState('Pedro')
     return (
         <>
@@ -10,4 +10,4 @@ const ComParametro = props => {
     );
 };
 
-export default ComParametro;
+export default Funcao;
