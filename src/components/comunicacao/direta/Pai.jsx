@@ -3,9 +3,9 @@ import Filho from './Filho'
 
 const pai = props =>
     <div>
-        <Filho sobrenome="Silva">João</Filho>
-        <Filho sobrenome="Silva">Maria</Filho>
-        <Filho sobrenome="Silva">Pedro</Filho>
+        <Filho sobrenome="Silva"><strong>João</strong></Filho>
+        <Filho {... props}>Maria</Filho>
+        <Filho sobrenome={props.sobrenome}>Pedro</Filho>
     </div>
 
 export default pai;

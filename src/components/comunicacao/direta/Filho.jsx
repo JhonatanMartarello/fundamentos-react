@@ -2,8 +2,7 @@ import React from 'react'
 
 const filho = props =>
     <div>
-        <h3>Componente Filho</h3>
-        <h4>{props.children} - {props.sobrenome}</h4>
+        <p>{props.children} - {props.sobrenome}</p>
     </div>
 
 export default filho;

@@ -9,13 +9,17 @@ import Repeticao from './components/basicos/Repeticao';
 import Condicional from './components/basicos/Condicional';
 import CondicionalComIf from './components/basicos/CondicionalComIf';
 import Pai from './components/comunicacao/direta/Pai';
+import Super from './components/comunicacao/indireta/Super';
 
 
 const app = () => (
     <div className="App">
         
-        <Card titulo="#8 - Comunicação Direta" color="#FA6900">
-            <Pai></Pai>
+        <Card titulo="#9 - Comunicação Indireta" color="#000">
+            <Super></Super>
+        </Card>
+        <Card titulo="#8 - Comunicação Direta" color="#660066">
+            <Pai sobrenome="Freitas"></Pai>
         </Card>
         <Card titulo="#7 - Condicional Com IF" color="#FA6900">
             <CondicionalComIf numero={14}></CondicionalComIf>
