@@ -12,11 +12,15 @@ import Pai from './components/comunicacao/direta/Pai';
 import Super from './components/comunicacao/indireta/Super';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 const app = () => (
     <div className="App">
-        <h2>Fundamento React</h2>
+        <h2>Fundamentos React</h2>
         <div className="Cards">
+            <Card titulo="#12 - Mega" color="#73503C">
+                <Mega qtdNumero={8}></Mega>
+            </Card>
             <Card titulo="#11 - Contador" color="#FF66CC">
                 <Contador passo={10} valor={100}></Contador>
             </Card>
